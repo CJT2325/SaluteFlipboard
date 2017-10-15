@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cjt232.saluteflipboard.MainActivity">
+
+    <com.cjt232.saluteflipboard.FlipboardView
+        android:id="@+id/flipboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <Button
+        android:id="@+id/startAnimation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="start_Animation" />
+
+    <TextView
+        android:id="@+id/tv_AX"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="A_X" />
+
+    <TextView
+        android:id="@+id/tv_BX"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_AX"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="B_X" />
+
+    <TextView
+        android:id="@+id/tv_Z"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_BX"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Z" />
+
+    <SeekBar
+        android:id="@+id/seek_Z"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_Z"
+        android:layout_alignTop="@id/tv_Z"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@id/tv_Z"
+        android:max="360" />
+
+    <SeekBar
+        android:id="@+id/seek_AX"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_AX"
+        android:layout_alignTop="@id/tv_AX"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@id/tv_AX"
+        android:max="30" />
+
+    <SeekBar
+        android:id="@+id/seek_BX"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_BX"
+        android:layout_alignTop="@id/tv_BX"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@id/tv_BX"
+        android:max="30" />
+</RelativeLayout>
